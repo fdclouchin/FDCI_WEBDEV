@@ -55,7 +55,7 @@
 					<h4>Top Websites</h4>
 					<ol>
 						<li>
-							<a href="www.google.com">Google</a>
+							<a href="https://www.google.com">Google</a>
 						</li>
 						<li>
 							<a target="_blank" href="https://nativecamp.net">Nativecamp</a>
