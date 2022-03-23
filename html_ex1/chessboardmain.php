@@ -41,6 +41,7 @@
     }
 </style>
 <body>
+    <?php include ("backtomain.php");?>
     <h1>Chessboard</h1>
     <table class="ChessboardTable">
         <tr>
