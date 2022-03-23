@@ -12,37 +12,9 @@
 	}
 </style>
 <body>
-	<!-- <div>This is div</div>
-
-	<span>This is a span</span><span> This is a span 2</span>
-
-	<p>This is a paragraph</p>
-	<p>This is a paragraph 2</p>
-	<ol>
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-	</ol>
-
-	<ul>
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-	</ul>
-
-	<table>
-		<tr>
-			<td>row column1</td>
-			<td>row column2</td>
-		</tr>
-		<tr>
-			<td>row2 column1</td>
-			<td>row2 column2</td>
-		</tr>
-	</table> -->
 	<!-- table>tr*2>td*2 -->
 	<a href="resume.php">Resume</a>
-	<a href="chessboard.php">Chessboard</a>
+	<a href="chessboardmain.php">Chessboard</a>
 	<table border = "1" width="800">
 		<!-- this is a banner -->
 		<tr>
