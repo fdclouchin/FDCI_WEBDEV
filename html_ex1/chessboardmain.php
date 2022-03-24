@@ -8,8 +8,8 @@
 </head>
 <style>
     td {
-        height: 50px;
-        width: 50px;
+        height: 80px;
+        width: 80px;
     }
     td.dark{
         background: #aaa;
@@ -31,7 +31,7 @@
         border-bottom: 1px solid #000; 
     }
     .ChessboardTable tr:last-child td {
-         border-bottom: 1px solid; 
+        border-bottom: 1px solid; 
     }
     .ChessboardTable th:empty { 
         border: none; 
@@ -39,10 +39,11 @@
     th{
         padding: 10px;
     }
+
 </style>
 <body>
     <?php include ("backtomain.php");?>
-    <h1>Chessboard</h1>
+    <h1>CHESSBOARD</h1>
     <table class="ChessboardTable">
         <tr>
             <th></th>
