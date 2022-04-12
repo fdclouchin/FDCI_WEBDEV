@@ -1,0 +1,366 @@
+html{
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #e9f6fb;
+}
+   
+
+#main{
+    height: 1000px;
+    color: #024364;
+}
+
+.sidenav{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    background-image: url("images/handsign.jpg"); 
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nav-content{
+    margin-top: 300px;
+    text-align: center;
+    font-weight: 1000;
+}
+.nav-content a{
+    color: #57C6FD;
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+.nav-content ul{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+} 
+
+.nav-content a:hover{
+    font-size: 18pt;
+    color: #0287CA;
+    opacity: 1;
+}
+
+.scroll-page {
+    display: flex;
+    position:  relative;
+    height: 100%;
+    margin-left: 300px;
+    border-bottom: solid;
+    border-color: #6C757D;
+    padding: 20px;
+}
+
+.nav-links{
+    opacity: 0.5;
+}
+
+.profilepicture{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+/* Top */
+
+.intro-name{
+    font-weight: bolder;
+    font-size: 50pt;
+}
+
+.intro-lastname{
+    color: #0487C8;
+}
+
+.email {
+    color: #0487C8;
+}
+
+.sub-intro{
+    text-transform: uppercase;
+    font-size: 16pt;
+    position: relative;
+    font-weight: 900;
+}
+
+.section-intro{
+    width: 900px;
+}
+
+.intro-content{
+    margin-top: 40px;
+}
+
+.introduction{
+    margin-left: 30px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.social-links{
+    margin-top: 60px;
+    color: black;
+}
+
+.social-links .socials{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #024364;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    color: white;
+}
+
+.social-links .socials:hover{
+    background-color: #0487c8;
+}
+
+/* content1 */
+
+.experience-section{
+    margin-left: 20px;
+}
+
+.experience-header{
+    font-weight: bolder;
+    font-size: 40pt;
+}
+
+.experiences{
+    margin-top: 10px;
+}
+
+.jobs{
+    width: 1000px;
+    margin-bottom: 10px;
+}
+
+.job-title{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 20pt;
+    float: left;
+    width: 75%;
+    position: relative;
+    padding: 5px;
+}
+
+.job-header{
+    height: 50px;
+}
+
+.company-title{
+    text-transform: uppercase;
+    padding-left: 5px;
+    font-weight: 700;
+    color: #495158;
+}
+
+.job-description{
+    position: relative;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.date-employed{
+    float: right;
+    position: relative;
+    width: 20%;
+    margin-top: 10px;
+    text-align: right;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #0487C8;
+}
+
+/* content 2 */
+.portfolio-section{
+    margin-left: 20px;
+    width: 1000px;
+}
+
+/* .portfolio-header{
+    font-weight: bolder;
+    font-size: 40pt;
+} */
+
+.testing-summary{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.title-testing-summary{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25pt;
+}
+
+.testing-summary li{
+    margin: 10px;
+}
+
+.websites-tested{
+    height: 500px;
+}
+
+.nativecamp-card{
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+    width: 40%;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: #cdeefe;
+}
+
+.nativecamp-card img{
+    border-radius: 15px 15px 0 0;
+}
+
+.inner-nc-card{
+    margin: 15px;
+    height: 60px;
+}
+
+.nc-small-card{
+    border-radius: 8px;
+    font-size: 10pt;
+    background-color: #6C757D;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 700;
+    padding: 6px;
+    float: left;
+}
+
+/* content 3 */
+
+.awards-section{
+    margin-left: 30px;
+    top: 30%;
+    position: relative;
+}
+
+.awards-header{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* .awards-list-section{
+} */
+
+.awards-list-section li{
+    margin: 10px;
+}
+
+.awards-list-section ul{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* content 4 */
+.skills-section{
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.skills-title{
+    text-transform: uppercase;
+    font-size: 40pt;
+    font-weight: 700;
+}
+
+.skills-subsection{
+    margin-top: 50px;
+}
+
+.skills-subsection ul{
+    list-style: none;
+}
+
+.skills-subsection li{
+    margin: 10px;
+    font-size: 20pt;
+}
+
+.skills-subtitle{
+    font-size: 25pt;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/* content 5 */
+.education-section{
+    margin-left: 30px;
+    margin-top: 20%;
+    width: 900px;
+}
+
+.education-header{
+    text-transform: uppercase;
+    font-size: 40pt;
+    font-weight: 700;
+}
+
+.education-list{
+    margin-top: 50px;
+    height: 35px;
+}
+
+.institution-header{
+    float: left;
+    font-size: 18pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+.institution-date{
+    float: right;
+    width: 40%;
+    text-align: right;
+    font-size: 14pt;
+    font-weight:500;
+    color: #0487C8;
+}
+
+.institution-degree{
+    text-transform: uppercase;
+    font-size: 12pt;
+}
+
+/* content 6 */
+
+.interest-section{
+    width: 900px;
+    margin-left: 30px;
+    position: relative;
+    top: 30%;
+    height: 200px;
+}
+
+.interest-title{
+    font-size: 30pt;
+    font-weight: 800;
+    text-transform: uppercase;
+}
