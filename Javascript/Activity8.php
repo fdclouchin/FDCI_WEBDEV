@@ -14,22 +14,31 @@
             margin: 5px;
             background: green;
         }        
-        #addDiv{
+        #add_div{
             float: left;
+        }
+        #main{
+            padding: 20px;
         }
     </style>
 </head>
 <body>
-    <button id="addDiv">insert a div tag!</button>
-    <div id="parent_fdc_div">fdc</div>
+    <?php include('header.php');?>
+    <div id="main">
+        <div style="margin-bottom: 10px;">
+            <b>Create a jquery program that will append div tags inside the div parent below. each div tag added must contain a number that will increment on each addition</b>
+        </div>
+        <button id="add_div">insert a div tag!</button>
+        <div id="parent_fdc_div">fdc</div>
+    </div>
 <script>
     $(document).ready(function(){
-    $("#addDiv").click(function(){
-        $("#parent_fdc_div").after("<div id='parent_fdc_div'>fdc</div>");
-        console.warn("added another div!")
-        // insertAfter is also the same --- working. teh? wala ka nag dunk?
-        // $("<div id='parent_fdc_div'>fdc</div>").insertAfter("#parent_fdc_div"); 
-    });
+        $("#add_div").click(function(){
+            $("#parent_fdc_div").after("<div id='parent_fdc_div'>fdc</div>");
+            console.warn("added another div!")
+            // insertAfter is also the same --- working. teh? wala ka nag dunk?
+            // $("<div id='parent_fdc_div'>fdc</div>").insertAfter("#parent_fdc_div"); 
+        });
     });
 </script>
 </body>

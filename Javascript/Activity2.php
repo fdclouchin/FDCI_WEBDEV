@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop-up data to div</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #main{
+            padding: 20px;
+        }
+    </style>
 </head>
 <body onload="promptFunc()">
-    <p id="targetID"></p>
-
-    
+    <?php include('header.php');?>
+    <div id="main">
+        <h3>Create a jquery program that will ask for a person's name, and outputs it inside a div element</h3>
+        <p id="targetID"></p>
+    </div>
 <!-- script -->
 <script>
     function promptFunc() {

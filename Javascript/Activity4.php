@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get background color</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #main{
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div id="fdc_div_element" style="background-color: purple; height: 500px; width: 100%;"></div>
-    <br>
-    <button id="getDivColor">WHAT COLOR AM I?</button>
-    <br>
-    <span id="answer"></span>
+    <?php include('header.php');?>
+    <div id="main">
+        <h3>Create a jquery program that will get the current background color of the div element below</h3>
 
+        <div id="fdc_div_element" style="background-color: purple; height: 500px; width: 100%;"></div>
+        <br>
+        <button id="getDivColor">WHAT COLOR AM I?</button>
+        <br>
+        <span id="answer"></span>
+    </div>
 <script>
     $("#getDivColor").click(function(){
         //line of code to change rgb to hext ->> // const rgb2hex = (rgb) => `#${rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).slice(1).map(n => parseInt(n, 10).toString(16).padStart(2, '0')).join('')}`
