@@ -5,41 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jquery - Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles_rps.css">
     <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        #result{
-            background-color: white;
-            padding: 10px;
-        }
-        #start{
-            font-size: 40pt;
-        }
-       body{
-            background: url("assets/rps.jpg") no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            height: 100%;
-            width: 100%;
-        }
-        .main{
-            margin-top: 200px;
-        }
-        .p1{
-            border-radius: 20%;
-        }
-        .p2{
-            border-radius: 20%;
-        }
-        .versus-button{
-            height: 380px;
-        }
-        .test{
-            border: 1pt solid red;
-        }
-    </style>
 </head>
 <body>
     <div class="container-fluid main">
@@ -78,7 +46,7 @@
                 const rock = 1;
                 const paper = 2;
                 const scissors = 3;
-                
+                //function for comparing players except tie
                 function comparePlayers(){
                     if (playerOne == rock){
                         if (playerTwo == paper){
@@ -162,7 +130,7 @@
                         }
                     }
                 }
-
+                //function TIE only
                 function tie(){
                     if (playerOne == rock && playerTwo == rock){
                         console.log("Rock & Rock TIE");
@@ -193,6 +161,7 @@
                         $(".playerTwoLabel").html("Player 2: Scissors");
                     }
                 }
+                //call functions
                 tie();
                 comparePlayers();
             });

@@ -1,0 +1,31 @@
+#result{
+    background-color: white;
+    padding: 10px;
+}
+#start{
+    font-size: 40pt;
+}
+body{
+    background: url("assets/rps.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.main{
+    margin-top: 200px;
+}
+.p1{
+    border-radius: 20%;
+}
+.p2{
+    border-radius: 20%;
+}
+.versus-button{
+    height: 380px;
+}
+.test{
+    border: 1pt solid red;
+}
