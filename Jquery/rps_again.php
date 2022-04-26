@@ -7,7 +7,7 @@
     <title>Jquery - Rock Paper Scissors</title>
     <link rel="stylesheet" href="styles_rps.css">
     <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <div class="container-fluid main">
@@ -36,7 +36,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(startGame);
-        // create 3 functions for tie, player1win, player2win
         function startGame(){
             $('#start').on('click', function(){
                 // randomize 1-3 for player 1 and player 2
@@ -54,19 +53,11 @@
                             $('#result').html("Player 2 Wins").removeAttr('style');
                             $('.p2').css({'background-color':'green'});
                             $('.p1').css({'background-color':'white'});
-                            $(".player1").attr("src","assets/rock.png");
-                            $(".playerOneLabel").html("Player 1: Rock");
-                            $(".player2").attr("src","assets/paper.png");
-                            $(".playerTwoLabel").html("Player 2: Paper");
                         }else if (playerTwo == scissors){
                             console.log("Player 1 Wins");
                             $('#result').html("Player 1 Wins").removeAttr('style');
                             $('.p1').css({'background-color':'green'});
                             $('.p2').css({'background-color':'white'});
-                            $(".player1").attr("src","assets/rock.png");
-                            $(".playerOneLabel").html("Player 1: Rock");
-                            $(".player2").attr("src","assets/scissors.png");
-                            $(".playerTwoLabel").html("Player 2: Scissors");
                         }
                     }else if (playerOne == paper){
                         if (playerTwo == rock){
@@ -74,19 +65,11 @@
                             $('#result').html("Player 1 Wins").removeAttr('style');
                             $('.p1').css({'background-color':'green'});
                             $('.p2').css({'background-color':'white'});
-                            $(".player2").attr("src","assets/rock.png");
-                            $(".playerTwoLabel").html("Player 2: Rock");
-                            $(".player1").attr("src","assets/paper.png");
-                            $(".playerOneLabel").html("Player 1: Paper" );
                         }else if (playerTwo == scissors){
                             console.log("Player 2 Wins");
                             $('#result').html("Player 2 Wins").removeAttr('style');
                             $('.p2').css({'background-color':'green'});
                             $('.p1').css({'background-color':'white'});
-                            $(".player1").attr("src","assets/paper.png");
-                            $(".playerOneLabel").html("Player 1: Paper");
-                            $(".player2").attr("src","assets/scissors.png");
-                            $(".playerTwoLabel").html("Player 2: Scissors");
                         }
                     }else if (playerTwo == rock){
                         if (playerOne == paper){
@@ -94,19 +77,11 @@
                             $('#result').html("Player 1 Wins").removeAttr('style');
                             $('.p1').css({'background-color':'green'});
                             $('.p2').css({'background-color':'white'});
-                            $(".player2").attr("src","assets/rock.png");
-                            $(".playerTwoLabel").html("Player 2: Rock");
-                            $(".player1").attr("src","assets/paper.png");
-                            $(".playerOneLabel").html("Player 1: Paper");
                         }else if (playerOne == scissors){
                             console.log("Player 2 Wins");
                             $('#result').html("Player 2 Wins").removeAttr('style');
                             $('.p2').css({'background-color':'green'});
                             $('.p1').css({'background-color':'white'});
-                            $(".player2").attr("src","assets/rock.png");
-                            $(".playerTwoLabel").html("Player 2: Rock");
-                            $(".player1").attr("src","assets/scissors.png");
-                            $(".playerOneLabel").html("Player 1: Scissors");
                         }
                     }else if (playerTwo == paper){
                         if (playerOne == rock){
@@ -114,55 +89,53 @@
                             ('#result').html("Player 2 wins").removeAttr('style');
                             $('.p2').css({'background-color':'green'});
                             $('.p1').css({'background-color':'white'});
-                            $(".player1").attr("src","assets/rock.png");
-                            $(".playerOneLabel").html("Player 1: Rock");
-                            $(".player2").attr("src","assets/paper.png");
-                            $(".playerTwoLabel").html("Player 2: Paper");
                         }else if (playerOne == scissors){
                             console.log("Player 1 Wins");
                             $('#result').html("Player 1 Wins").removeAttr('style');
                             $('.p1').css({'background-color':'green'});
                             $('.p2').css({'background-color':'white'});
-                            $(".player2").attr("src","assets/paper.png");
-                            $(".playerTwoLabel").html("Player 2: Paper");
-                            $(".player1").attr("src","assets/scissors.png");
-                            $(".playerOneLabel").html("Player 1: Scissors");
                         }
                     }
                 }
-                //function TIE only
+                //function tie both players
                 function tie(){
-                    if (playerOne == rock && playerTwo == rock){
-                        console.log("Rock & Rock TIE");
+                    if (playerOne == playerTwo){
+                        console.log("TIE");
                         $('#result').html("Tie").css({'color':'red'});
                         $('.p1').css({'background-color':'yellow'});
                         $('.p2').css({'background-color':'yellow'});
+                    }
+                }
+                //display image for player 1 
+                function playerOneImg(){
+                    if (playerOne == rock){
                         $(".player1").attr("src","assets/rock.png");
                         $(".playerOneLabel").html("Player 1: Rock");
-                        $(".player2").attr("src","assets/rock.png");
-                        $(".playerTwoLabel").html("Player 2: Rock");
-                    }else if (playerOne == paper && playerTwo == paper){
-                        console.log("Paper & Paper TIE");
-                        $('#result').html("Tie").css({'color':'red'});
-                        $('.p1').css({'background-color':'yellow'});
-                        $('.p2').css({'background-color':'yellow'});
+                    }else if (playerOne == paper){
                         $(".player1").attr("src","assets/paper.png");
                         $(".playerOneLabel").html("Player 1: Paper");
-                        $(".player2").attr("src","assets/paper.png");
-                        $(".playerTwoLabel").html("Player 2: Paper");
-                    }else if (playerOne == scissors && playerTwo == scissors){
-                        console.log("Scissors & Scissors TIE");
-                        $('#result').html("Tie").css({'color':'red'});
-                        $('.p1').css({'background-color':'yellow'});
-                        $('.p2').css({'background-color':'yellow'});
+                    }else if (playerOne == scissors){
                         $(".player1").attr("src","assets/scissors.png");
                         $(".playerOneLabel").html("Player 1: Scissors");
+                    }
+                }
+                //display image for player 2
+                function playerTwoImg(){   
+                    if (playerTwo == rock){
+                        $(".player2").attr("src","assets/rock.png");
+                        $(".playerTwoLabel").html("Player 2: Rock");
+                    }else if (playerTwo == paper){
+                        $(".player2").attr("src","assets/paper.png");
+                        $(".playerTwoLabel").html("Player 2: Paper");
+                    }else if (playerTwo == scissors){
                         $(".player2").attr("src","assets/scissors.png");
                         $(".playerTwoLabel").html("Player 2: Scissors");
                     }
                 }
                 //call functions
                 tie();
+                playerOneImg();
+                playerTwoImg();
                 comparePlayers();
             });
         }
