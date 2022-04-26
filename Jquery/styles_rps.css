@@ -19,13 +19,18 @@ body{
 }
 .p1{
     border-radius: 20%;
+    padding: 5px;
 }
 .p2{
     border-radius: 20%;
+    padding: 5px;
 }
 .versus-button{
     height: 380px;
 }
-.test{
-    border: 1pt solid red;
+.playerOneLabel{
+    font-size: 30pt;
+}
+.playerTwoLabel{
+    font-size: 30pt;
 }

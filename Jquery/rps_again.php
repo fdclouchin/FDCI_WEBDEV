@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-md-1 offset-md-1"></div>
             <div class="col-md-3 text-center p1">
-                <h1>Player 1</h1>
+                <h1>PLAYER  1</h1>
                 <img class="player1 rounded mx-auto d-block"/>
                 <span class="playerOneLabel">random hand</span>
             </div>
@@ -22,14 +22,14 @@
                 <button id="start" class="btn btn-danger p-4">VS</button>
             </div>
             <div class="col-md-3 text-center p2">
-                <h1>Player 2</h1>
+                <h1>PLAYER 2</h1>
                 <img class="player2 rounded mx-auto d-block"/>
                 <span class="playerTwoLabel">random hand</span>
             </div>
         </div>
         <div class="col-md-2 offset-md-5 text-center">
-            WINNER: 
-            <div id="result" class="fw-bold">Should display if which player will win</div>
+            <b>WINNER: </b>
+            <div id="result" class="fw-bold display-2">RESULT</div>
         </div>
     </div>
     <!-- Scripts -->
@@ -49,48 +49,40 @@
                 function comparePlayers(){
                     if (playerOne == rock){
                         if (playerTwo == paper){
-                            console.log("Player 2 Wins");
                             $('#result').html("Player 2 Wins").removeAttr('style');
                             $('.p2').css({'background-color':'green'});
                             $('.p1').css({'background-color':'white'});
                         }else if (playerTwo == scissors){
-                            console.log("Player 1 Wins");
                             $('#result').html("Player 1 Wins").removeAttr('style');
                             $('.p1').css({'background-color':'green'});
                             $('.p2').css({'background-color':'white'});
                         }
                     }else if (playerOne == paper){
                         if (playerTwo == rock){
-                            console.log("Player 1 Wins");
                             $('#result').html("Player 1 Wins").removeAttr('style');
                             $('.p1').css({'background-color':'green'});
                             $('.p2').css({'background-color':'white'});
                         }else if (playerTwo == scissors){
-                            console.log("Player 2 Wins");
                             $('#result').html("Player 2 Wins").removeAttr('style');
                             $('.p2').css({'background-color':'green'});
                             $('.p1').css({'background-color':'white'});
                         }
                     }else if (playerTwo == rock){
                         if (playerOne == paper){
-                            console.log("Player 1 Wins");
                             $('#result').html("Player 1 Wins").removeAttr('style');
                             $('.p1').css({'background-color':'green'});
                             $('.p2').css({'background-color':'white'});
                         }else if (playerOne == scissors){
-                            console.log("Player 2 Wins");
                             $('#result').html("Player 2 Wins").removeAttr('style');
                             $('.p2').css({'background-color':'green'});
                             $('.p1').css({'background-color':'white'});
                         }
                     }else if (playerTwo == paper){
                         if (playerOne == rock){
-                            console.log("Player 2 Wins");
                             ('#result').html("Player 2 wins").removeAttr('style');
                             $('.p2').css({'background-color':'green'});
                             $('.p1').css({'background-color':'white'});
                         }else if (playerOne == scissors){
-                            console.log("Player 1 Wins");
                             $('#result').html("Player 1 Wins").removeAttr('style');
                             $('.p1').css({'background-color':'green'});
                             $('.p2').css({'background-color':'white'});
@@ -100,7 +92,6 @@
                 //function tie both players
                 function tie(){
                     if (playerOne == playerTwo){
-                        console.log("TIE");
                         $('#result').html("Tie").css({'color':'red'});
                         $('.p1').css({'background-color':'yellow'});
                         $('.p2').css({'background-color':'yellow'});
